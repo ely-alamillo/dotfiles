@@ -7,4 +7,3 @@ zshrc=".zshrc"
 cp $HOME/.bash_profile  ./.bash_profile
 cp $HOME/.bashrc ./.bashrc
 cp $HOME/.zshrc ./.zshrc
-
