@@ -4,6 +4,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/Elyalamillo/.oh-my-zsh"
 
+# Path for Flutter
+export PATH=Users/Elyalamillo/Desktop/temp/projects/flutter/bin:$PATH
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -109,7 +112,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 
 
-# source /Users/ely/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+source /Users/Elyalamillo/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
 
@@ -132,3 +135,8 @@ alias projects='cd /Users/Elyalamillo/Desktop/temp/projects'
 source /Users/Elyalamillo/anaconda3/bin
 source ~/.bash_profile
 source $ZSH/oh-my-zsh.sh
+
+# to kill port
+killport () {
+    lsof -i tcp:"$@" | awk 'NR!=1 {print $2}' | xargs kill -9
+}
