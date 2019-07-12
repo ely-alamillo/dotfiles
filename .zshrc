@@ -2,10 +2,10 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/Elyalamillo/.oh-my-zsh"
+export ZSH="/Users/elyalamillo/.oh-my-zsh"
 
 # Path for Flutter
-export PATH=Users/Elyalamillo/Desktop/temp/projects/flutter/bin:$PATH
+export PATH=Users/elyalamillo/Desktop/temp/projects/flutter/bin:$PATH
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -112,7 +112,7 @@ export LSCOLORS=ExFxBxDxCxegedabagacad
 
 
 
-source /Users/Elyalamillo/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /Users/elyalamillo/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern cursor)
 ZSH_HIGHLIGHT_PATTERNS=('rm -rf *' 'fg=white,bold,bg=red')
 
@@ -125,14 +125,13 @@ alias bconfig="code ~/.bashrc"
 alias pserve="python2 -m SimpleHTTPServer"
 
 # project alias
-alias vsa='cd ~/dev/exelon-admin-ui'
-alias pvu='cd ~/dev/plantviewer-ui'
+
+
 
 # git alias
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
-alias projects='cd /Users/Elyalamillo/Desktop/temp/projects'
+alias projects='cd /Users/elyalamillo/Desktop/temp/projects'
 
-source /Users/Elyalamillo/anaconda3/bin
 source ~/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
